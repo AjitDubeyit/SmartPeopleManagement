@@ -18,13 +18,13 @@ import javax.servlet.http.HttpServletRequest;
  * @author www.codejava.net
  *
  */
-public class BookDAO {
+public class PeopleDAO {
 	private String jdbcURL;
 	private String jdbcUsername;
 	private String jdbcPassword;
 	private Connection jdbcConnection;
 	
-	public BookDAO(String jdbcURL, String jdbcUsername, String jdbcPassword) {
+	public PeopleDAO(String jdbcURL, String jdbcUsername, String jdbcPassword) {
 		this.jdbcURL = jdbcURL;
 		this.jdbcUsername = jdbcUsername;
 		this.jdbcPassword = jdbcPassword;

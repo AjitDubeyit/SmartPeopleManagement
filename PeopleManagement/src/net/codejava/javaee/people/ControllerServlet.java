@@ -18,14 +18,14 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class ControllerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private BookDAO peopleDAO;
+	private PeopleDAO peopleDAO;
 
 	public void init() {
 		String jdbcURL = getServletContext().getInitParameter("jdbcURL");
 		String jdbcUsername = getServletContext().getInitParameter("jdbcUsername");
 		String jdbcPassword = getServletContext().getInitParameter("jdbcPassword");
 
-		peopleDAO = new BookDAO(jdbcURL, jdbcUsername, jdbcPassword);
+		peopleDAO = new PeopleDAO(jdbcURL, jdbcUsername, jdbcPassword);
 
 	}
 
